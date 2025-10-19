@@ -1,0 +1,223 @@
+/* ====== Struktur Layout Utama Menggunakan GRID ====== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #fff8e1; /* krem lembut */
+    color: #333;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    min-height: 100vh;
+}
+
+/* ====== Header ====== */
+header {
+    grid-area: header;
+    background-color: #a52a2a; /* merah bata */
+    color: #f8e473; /* emas */
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    border-bottom: 4px solid #d4af37; /* gold border */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #f8e473;
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* ====== Sidebar ====== */
+aside {
+    grid-area: sidebar;
+    background-color: #fdf5d5;
+    border-right: 2px solid #e0c66d;
+    padding: 20px;
+}
+
+aside h3 {
+    color: #a52a2a;
+    border-bottom: 2px solid #e0c66d;
+    padding-bottom: 5px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside li {
+    margin: 12px 0;
+}
+
+aside a {
+    text-decoration: none;
+    color: #a52a2a;
+    font-weight: 500;
+}
+
+aside a:hover {
+    color: #d4af37;
+}
+
+/* ====== Main (Konten Utama) dengan Flexbox ====== */
+main {
+    grid-area: main;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ====== Section Umum ====== */
+section {
+    background-color: #fffef6;
+    padding: 20px 25px;
+    border-radius: 12px;
+    border: 1.5px solid #e0c66d;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: #a52a2a;
+    border-left: 5px solid #e0c66d;
+    padding-left: 10px;
+}
+
+/* ====== Biodata (Flexbox) ====== */
+.biodata-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.biodata-container img {
+    border-radius: 10px;
+    border: 3px solid #d4af37;
+}
+
+.bio-text p {
+    margin: 5px 0;
+}
+
+/* ====== Media Sosial ====== */
+.sosmed {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.sosmed a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #a52a2a;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.sosmed a:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+/* ====== Tabel Organisasi ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #a52a2a;
+    color: #f8e473;
+}
+
+td, th {
+    border: 1px solid #d4af37;
+    padding: 8px;
+    text-align: center;
+}
+
+/* ====== Formulir ====== */
+form label {
+    font-weight: bold;
+    color: #a52a2a;
+}
+
+input, textarea {
+    width: 100%;
+    border: 1.5px solid #e0c66d;
+    border-radius: 6px;
+    padding: 8px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #a52a2a;
+    color: #f8e473;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d4af37;
+    color: #000;
+}
+
+/* ====== Footer ====== */
+footer {
+    grid-area: footer;
+    background-color: #a52a2a;
+    color: #f8e473;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    border-top: 4px solid #d4af37;
+}
+
+/* ====== Responsif (Mobile) ====== */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .biodata-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}

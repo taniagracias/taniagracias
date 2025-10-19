@@ -1,95 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profil Diri</title>
-    <link rel="icon" type="image/png" href="favicon.jpg"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Diri - Tania Gracia Siwalette</title>
+
+    <!-- 🔗 Favicon (ikon di tab browser) -->
+    <link rel="icon" type="image/png" href="favicon.jpg">
+
+    <!-- 🎨 Hubungkan ke file CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- (Opsional) Gunakan font Poppins dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Profil Mahasiswa</h1>
-        <nav>
-    <a href="#Biodata">Biodata</a> | 
-    <a href="#Sosial Media">Media Sosial</a> | 
-    <a href="#Riwayat pendidikan">Riwayat Pendidikan</a> | 
-    <a href="#Hobi">Hobi</a> | 
-    <a href="#Organisasi">Pengalaman Organisasi</a> | 
-    <a href="#Kontak">Kontak</a>
-</nav>
-        <hr>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Profil Mahasiswa</h1>
+            <nav>
+                <a href="#Biodata">Biodata</a> | 
+                <a href="#SosialMedia">Media Sosial</a> | 
+                <a href="#pendidikan">Riwayat Pendidikan</a> | 
+                <a href="#hobi">Hobi</a> | 
+                <a href="#organisasi">Pengalaman Organisasi</a> | 
+                <a href="#Kontak">Kontak</a>
+            </nav>
+        </header>
 
-    <section>
-        <h2>Biodata</h2>
-        <img src="fotoprofil.jpg" alt="Foto Profil" width="150"> 
-        <p><b>Nama:</b> Tania Gracia Siwalette</p>
-        <p><b>NIM:</b> 2405551116</p>
-        <p><b>Alamat:</b> Denpasar, Bali</p>
-        <p><b>Email:</b> taniagracia0905@gmail.com</p>
-
-        <h3>Media Sosial</h3>
-        <ul>
+        <aside>
+            <h3>Navigasi Cepat</h3>
             <ul>
-    <li><a href="https://tiktok.com/tgraceaa" target="_blank">TikTok</a></li>
-    <li><a href="https://instagram.com/taniagrciass" target="_blank">Instagram</a></li>
-    <li><a href="https://x.com/septembearss" target="_blank">X (Twitter)</a></li>
-</ul>
+                <li><a href="#Biodata">Biodata</a></li>
+                <li><a href="#pendidikan">Pendidikan</a></li>
+                <li><a href="#hobi">Hobi</a></li>
+                <li><a href="#organisasi">Organisasi</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+        </aside>
 
-        </ul>
-    </section>
+        <main>
+            <section id="Biodata">
+                <h2>Biodata</h2>
+                <div class="biodata-container">
+                    <img src="fotoprofil.jpg" alt="Foto Profil" width="150">
+                    <div class="bio-text">
+                        <p><b>Nama:</b> Tania Gracia Siwalette</p>
+                        <p><b>NIM:</b> 2405551116</p>
+                        <p><b>Alamat:</b> Denpasar, Bali</p>
+                        <p><b>Email:</b> taniagracia0905@gmail.com</p>
+                    </div>
+                </div>
+            </section>
 
-    <section id="pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <ul>
-            <li>SD Negeri 2 Sesetan</li>
-            <li>SMP Negeri 6 Denpasar</li>
-            <li>SMA Negeri 5 Denpasar</li>
-        </ul>
-    </section>
+            <section id="SosialMedia">
+                <h2>Media Sosial</h2>
+                <ul class="sosmed">
+                    <li><a href="https://tiktok.com/tgraceaa" target="_blank">TikTok</a></li>
+                    <li><a href="https://instagram.com/taniagrciass" target="_blank">Instagram</a></li>
+                    <li><a href="https://x.com/septembearss" target="_blank">X (Twitter)</a></li>
+                </ul>
+            </section>
 
-    <section id="hobi">
-        <h2>Hobi</h2>
-        <ol>
-            <li>Travelling</li>
-            <li>Ngevlog</li>
-            <li>Olahraga</li>
-        </ol>
-    </section>
+            <section id="pendidikan">
+                <h2>Riwayat Pendidikan</h2>
+                <ul>
+                    <li>SD Negeri 2 Sesetan</li>
+                    <li>SMP Negeri 6 Denpasar</li>
+                    <li>SMA Negeri 5 Denpasar</li>
+                </ul>
+            </section>
 
-    <section id="organisasi">
-        <h2>Pengalaman Organisasi</h2>
-        <table border="1" cellpadding="5">
-            <tr>
-                <th>Tahun</th>
-                <th>Organisasi</th>
-                <th>Jabatan</th>
-            </tr>
-            <tr>
-                <td>2022</td>
-                <td>English Club SMA Negeri 5 Denpasar</td>
-                <td>Anggota</td>
-            </tr>
-        </table>
-    </section>
+            <section id="hobi">
+                <h2>Hobi</h2>
+                <ol>
+                    <li>Travelling</li>
+                    <li>Ngevlog</li>
+                    <li>Olahraga</li>
+                </ol>
+            </section>
 
-    <section>
-        <h2>Formulir Kontak</h2>
-        <form>
-            <label>Nama:</label><br>
-            <input type="text" name="nama"><br><br>
+            <section id="organisasi">
+                <h2>Pengalaman Organisasi</h2>
+                <table>
+                    <tr>
+                        <th>Tahun</th>
+                        <th>Organisasi</th>
+                        <th>Jabatan</th>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>English Club SMA Negeri 5 Denpasar</td>
+                        <td>Anggota</td>
+                    </tr>
+                </table>
+            </section>
 
-            <label>Email:</label><br>
-            <input type="email" name="email"><br><br>
+            <section id="Kontak">
+                <h2>Formulir Kontak</h2>
+                <form>
+                    <label>Nama:</label><br>
+                    <input type="text" name="nama"><br><br>
 
-            <label>Pesan:</label><br>
-            <textarea name="pesan" rows="4" cols="30"></textarea><br><br>
+                    <label>Email:</label><br>
+                    <input type="email" name="email"><br><br>
 
-            <button type="submit">Kirim</button>
-        </form>
-    </section>
+                    <label>Pesan:</label><br>
+                    <textarea name="pesan" rows="4" cols="30"></textarea><br><br>
 
-    <footer>
-        <hr>
-        <p>&copy; 2025 Profil Tania</p>
-    </footer>
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Profil Tania</p>
+        </footer>
+    </div>
 </body>
 </html>
